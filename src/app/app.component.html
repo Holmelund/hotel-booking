@@ -1,1 +1,14 @@
-<router-outlet></router-outlet>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav>
+        <app-sidenav-list (CloseSideNavigation)="sidenav.close()"></app-sidenav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <app-header (SideNavigationToggle)="sidenav.open()"></app-header>
+        <app-nav-tabs></app-nav-tabs>
+    </mat-sidenav-content>
+    
+    <div class="content-container" style="height: 450px; width: 450px; background: green;">
+        <router-outlet></router-outlet>
+    </div>
+</mat-sidenav-container>

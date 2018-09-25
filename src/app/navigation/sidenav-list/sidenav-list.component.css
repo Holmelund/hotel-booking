@@ -1,0 +1,7 @@
+.sidenav-items a {
+    border-bottom: 1px solid lightgrey;
+}
+
+.sidenav-items span {
+    padding-left: 6px;
+}

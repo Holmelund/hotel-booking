@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { MaterialModule } from './material.module';
 import { AppRoutingModule } from './app-routing.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -24,6 +25,10 @@ import { OffersComponent } from './offers/offers.component';
 import { AuthComponent } from './auth/auth.component';
 import { SignInComponent } from './auth/sign-in/sign-in.component';
 import { SignUpComponent } from './auth/sign-up/sign-up.component';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './navigation/header/header.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import { NavTabsComponent } from './navigation/nav-tabs/nav-tabs.component';
 
 @NgModule({
   declarations: [
@@ -45,13 +50,18 @@ import { SignUpComponent } from './auth/sign-up/sign-up.component';
     OffersComponent,
     AuthComponent,
     SignInComponent,
-    SignUpComponent
+    SignUpComponent,
+    HomeComponent,
+    HeaderComponent,
+    SidenavListComponent,
+    NavTabsComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
